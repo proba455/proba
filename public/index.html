@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя соцсеть</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="auth-section" style="display: none;">
+            <h1>📱 Моя соцсеть</h1>
+            <form id="auth-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Пароль" required minlength="6">
+                <button type="button" onclick="auth('login')">Войти</button>
+                <button type="button" onclick="auth('register')">Зарегистрироваться</button>
+            </form>
+            <div id="auth-error" style="color: red;"></div>
+        </div>
+        
+        <div id="main-section" style="display: none;">
+            <header>
+                <h1>📱 Моя соцсеть</h1>
+                <span id="user-email"></span>
+                <button onclick="logout()">Выйти</button>
+            </header>
+            
+            <div id="post-form">
+                <textarea id="post-text" placeholder="Что у вас нового?" required></textarea>
+                <input type="file" id="media-file" accept="image/jpeg,image/png,video/mp4">
+                <button onclick="createPost()">Опубликовать</button>
+            </div>
+            
+            <div id="posts-feed"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
