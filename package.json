@@ -1,0 +1,10 @@
+{
+  "name": "social-php-vercel",
+  "version": "1.0.0",
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "@vercel/php": "0.6.0"
+  }
+}
