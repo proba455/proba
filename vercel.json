@@ -10,7 +10,7 @@
     { "source": "/(.*)", "destination": "/public/$1" }
   ],
   "env": {
-    "FIREBASE_API_KEY": "AIzaSyAQDr-7PVL3Tzi42_qZmrYBKo5ZuPIXLAo",
-    "FIREBASE_PROJECT_ID": "sot-seti"
+    "FIREBASE_API_KEY": "FIREBASE_API_KEY",
+    "FIREBASE_PROJECT_ID": "FIREBASE_PROJECT_ID"
   }
 }
